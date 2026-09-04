@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sergio il Bassotto 👑 | Campione Italiano di Bellezza a Bagnoli</title>
+  <meta name="description" content="La storia completa raccontata in prima persona da Sergio (THE PHARAOH SAILS TO ORION) — Bassotto nano a pelo duro, Campione Italiano di Bellezza, papà e star di Instagram @sergioilbassotto.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-dark">
+
+  <!-- HERO TOP 16:9 FULLSCREEN BANNER -->
+  <section class="hero-full-169" id="hero">
+    <!-- BACKGROUND IMAGE 16:9 CON OVERLAY SFUMATO SINISTRA -->
+    <div class="hero-169-bg">
+      <img src="images/sergio_top.jpg" alt="Sergio il Bassotto Cover 16:9" id="heroImg">
+      <div class="hero-169-overlay"></div>
+    </div>
+
+    <div class="container hero-169-container">
+      
+      <!-- TOP NAVBAR TRASPARENTE SENZA SOVRAPPOSIZIONI -->
+      <header class="navbar-169">
+        <a href="#hero" class="brand-169">
+          <span>👑</span> SERGIO IL BASSOTTO
+        </a>
+
+        <nav class="nav-links-169" id="navLinks">
+          <a href="#bio">Chi Sono</a>
+          <a href="#storia-completa">La Mia Storia</a>
+          <a href="#palmares">Il Mio Campionato</a>
+          <a href="#galleria">Le Mie Foto</a>
+          <a href="#brand">Collabora</a>
+          <a href="#fanclub">Scrivimi</a>
+        </nav>
+
+        <div class="nav-169-right">
+          <button id="themeToggleBtn" class="icon-btn" title="Cambia Modalità">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+          <a href="https://www.instagram.com/sergioilbassotto/" target="_blank" rel="noopener" class="btn-pill-light">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- MAIN LEFT-ALIGNED HERO CONTENT (PERFETTAMENTE CENTRATO VERTICALMENTE) -->
+      <div class="hero-169-main-content">
+        
+        <!-- STATS ROW SUBLIME SULLA SINISTRA -->
+        <div class="hero-stats-row">
+          <div class="stat-item">
+            <span class="stat-number">22+</span>
+            <span class="stat-label">Esposizioni ENCI</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">13</span>
+            <span class="stat-label">Vittorie &amp; Titoli</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">🏆 1</span>
+            <span class="stat-label">Campione Italiano</span>
+          </div>
+        </div>
+
+        <!-- MAIN TITLE & PARAGRAPH SULLA SINISTRA -->
+        <h1 class="hero-169-title">
+          Ciao, sono <span class="highlight">Sergio!</span> 🐾
+        </h1>
+
+        <p class="hero-169-subhead">
+          Bassotto nano a pelo duro • Bagnoli (Napoli) 🏠 | 09.01.2017 🎂<br>
+          Campione Italiano di bellezza 🏆 In pensione dal ring 🐕
+        </p>
+
+        <!-- EMAIL COLLAB & LIVE STATUS ROW -->
+        <div class="hero-meta-row">
+          <div class="hero-email-pill">
+            <i class="fa-solid fa-envelope"></i> collab: <a href="mailto:sergioilbassotto@gmail.com">sergioilbassotto@gmail.com</a>
+          </div>
+
+          <div class="hero-status-card">
+            <div class="status-indicator active"></div>
+            <div class="status-info">
+              <span class="status-label">Cosa sto facendo:</span>
+              <span class="status-text" id="liveStatusText">🛌 Pisinolino a Bagnoli</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACTION BUTTONS LEFT ALIGNED -->
+        <div class="hero-169-cta">
+          <button id="treatBtn" class="btn btn-pill-solid treat-btn">
+            <span class="treat-icon">🍖</span> Regalami un Premietto!
+            <span class="treat-badge" id="treatCounter">0</span>
+          </button>
+
+          <a href="https://www.instagram.com/sergioilbassotto/" target="_blank" rel="noopener" class="btn btn-pill-outline">
+            <i class="fa-brands fa-instagram"></i> Seguimi su Instagram <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEZIONE BIO UFFICIALE DI SERGIO (IN PRIMA PERSONA) -->
+  <section class="section bio-official-section" id="bio">
+    <div class="container">
+      <div class="bio-banner-card">
+        <div class="bio-icon-quote"><i class="fa-solid fa-quote-left"></i></div>
+        <div class="bio-text-content">
+          <h2 class="bio-heading">Piacere, sono Sergio! 🐾</h2>
+          <div class="bio-body">
+            <p class="lead-text">
+              Sono un bassotto nano a pelo duro, <strong>Campione Italiano di Bellezza</strong>, e vivo felice a Bagnoli insieme ai miei umani. Dopo aver girato l'Italia sfilando nei ring più prestigiosi e collezionando medaglie, oggi mi godo la mia meritata pensione fatta di passeggiate, raduni ed esilaranti avventure quotidiane che racconto alla mia fantastica community.
+            </p>
+            <p>
+              Tutto quello che condivido su Instagram è <strong>autentico, spontaneo e genuino</strong> per far sorridere proprietari di cani e pet lovers.
+            </p>
+            <p class="highlight-quote">
+              Attraverso Reel, Stories e scatti racconto la mia vita da Re di casa e da Campione del mondo pet, mostrando la vita vera con ironia e valorizzando i brand in modo naturale.
+            </p>
+          </div>
+        </div>
+        <div class="bio-stamp">
+          <i class="fa-solid fa-stamp"></i>
+          <span>APPROVATO DA ME</span>
+          <small>Bagnoli (NA)</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE LA STORIA COMPLETA DI SERGIO (RACCONTATA DA SERGIO IN PRIMA PERSONA) -->
+  <section class="section story-full-section" id="storia-completa">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-subtitle"><i class="fa-solid fa-book-bookmark"></i> LA MIA AUTOBIOGRAFIA</div>
+        <h2 class="section-title">La Mia Storia Completa: Da Ugo ai Ring d'Italia 📖</h2>
+        <p class="section-description">
+          Vi racconto come sono arrivato in famiglia, come ho iniziato le sfilate, i viaggi con il mio umano Alessandro, le mie vittorie e la gioia di diventare papà.
+        </p>
+      </div>
+
+      <div class="story-grid">
+        <!-- Story Chapter 1 -->
+        <div class="story-chapter-card">
+          <div class="chapter-badge">Capitolo 1</div>
+          <h3><i class="fa-solid fa-house-chimney-heart"></i> L'Origine: Come sono arrivato dopo Ugo</h3>
+          <p>
+            Prima che arrivassi io, in casa Baggio c'era <strong>Ugo</strong>, il primo amato bassotto della famiglia che aveva fatto innamorare tutti della nostra razza straordinaria! Quando la mia sorellina umana desiderò un altro cane, la scelta fu naturale: il mio umano Alessandro andò a Roma dall'allevatrice Priscilla Tamo per prendermi quando avevo circa 5-6 mesi.
+          </p>
+          <p>
+            Fin da subito mi sono sentito il Re della casa: dolcissimo e tranquillo... tranne per un dettaglio divertente! Quando c'è qualcuno dietro la porta di casa, voglio letteralmente "mangiarmela", trasformandomi nel guardiano più fiero di Bagnoli! 🚪🐶
+          </p>
+        </div>
+
+        <!-- Story Chapter 2 -->
+        <div class="story-chapter-card">
+          <div class="chapter-badge">Capitolo 2</div>
+          <h3><i class="fa-solid fa-graduation-cap"></i> Le sfilate e il Corso da Handler del mio umano!</h3>
+          <p>
+            Le gare non erano nei nostri piani! L'allevatrice disse ad Alessandro che da cucciolo avevo fatto qualche passerella. Così iniziammo per gioco nelle sfilate amatoriali. Al Jumbo incontrammo Alfonso Velardi, che capì subito il mio grande potenziale da campione.
+          </p>
+          <p>
+            All'inizio Alessandro mi faceva vincere la classe e poi mi riportava a casa senza sapere che ci fosse il <em>Best in Show</em>! Io mi comportavo benissimo, ma i giudici dissero ad Alessandro con simpatia: <em>"Il problema di Sergio in certi momenti sei tu, non lui!"</em>. Così Alessandro ha frequentato un vero <strong>corso da handler</strong> per imparare a presentarmi come meritavo! 🎓
+          </p>
+        </div>
+
+        <!-- Story Chapter 3 -->
+        <div class="story-chapter-card highlight-chapter">
+          <div class="chapter-badge gold">Capitolo 3</div>
+          <h3><i class="fa-solid fa-crown"></i> 6 Maggio 2022: Proclamato Campione Italiano! 🏆</h3>
+          <p>
+            Dopo anni di viaggi insieme tra Ercolano, Telese Terme (dove sfilai sotto la pioggia battente e dovettero persino strizzarmi il pelo!), Isernia, Casaluce e Pescara, superando anche il lungo stop del lockdown, è arrivato il giorno più bello: 
+          </p>
+          <p class="story-quote">
+            <strong>Il 6 Maggio 2022 io (THE PHARAOH SAILS TO ORION) sono stato proclamato ufficialmente Campione Italiano di Bellezza ENCI!</strong> 🏆✨
+          </p>
+        </div>
+
+        <!-- Story Chapter 4 -->
+        <div class="story-chapter-card">
+          <div class="chapter-badge">Capitolo 4</div>
+          <h3><i class="fa-solid fa-baby-carriage"></i> 19 Luglio 2022: Il giorno che sono diventato Papà! ❤️</h3>
+          <p>
+            Pochi mesi dopo la conquista del titolo di Campione, il <strong>19 Luglio 2022</strong> sono nati i miei bellissimi cuccioli! È stata un'emozione dolcissima che ha coronato la mia vita da riproduttore e compagno di famiglia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE PALMARÈS CON SCHEDE BOX DELLE VITTORIE IN PRIMA PERSONA -->
+  <section class="section palmares-section" id="palmares">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-subtitle"><i class="fa-solid fa-trophy"></i> REGISTRO UFFICIALE ENCI</div>
+        <h2 class="section-title">Il Campionato Italiano di Sergio 🏆</h2>
+        <p class="section-description">
+          Tutte le mie grandi vittorie, i primi posti e i premi conquistati sfilando nei ring d'Italia con il mio Pedigree LO1748464 (THE PHARAOH SAILS TO ORION).
+        </p>
+      </div>
+
+      <!-- GRID BOX DELLE VITTORIE -->
+      <div class="victories-grid">
+
+        <!-- Victory Box 1: PROCLAMAZIONE CAMPIONE -->
+        <div class="victory-card champion-card-highlight">
+          <div class="v-card-top">
+            <span class="v-trophy-icon">🏆</span>
+            <span class="v-date-tag">06 MAGGIO 2022</span>
+          </div>
+          <h3 class="v-title">LA MIA PROCLAMAZIONE UFFICIALE ENCI</h3>
+          <div class="v-location"><i class="fa-solid fa-location-dot"></i> Roma / Italia</div>
+          <div class="v-result-badge gold-champion">
+            <i class="fa-solid fa-crown"></i> CAMPIONE ITALIANO DI BELLEZZA
+          </div>
+          <div class="v-details-box">
+            <p>Il giorno in cui l'ENCI mi ha proclamato ufficialmente <strong>Campione Italiano di Bellezza</strong> per il mio Pedigree LO1748464!</p>
+          </div>
+        </div>
+
+        <!-- Victory Box 2: NASCITA CUCCIOLI -->
+        <div class="victory-card heart-card-highlight">
+          <div class="v-card-top">
+            <span class="v-trophy-icon">❤️</span>
+            <span class="v-date-tag">19 LUGLIO 2022</span>
+          </div>
+          <h3 class="v-title">SONO DIVENTATO PAPÀ!</h3>
+          <div class="v-location"><i class="fa-solid fa-location-dot"></i> Bagnoli (NA)</div>
+          <div class="v-result-badge red-heart">
+            <i class="fa-solid fa-heart"></i> NASCITA DEI MIEI CUCCIOLI
+          </div>
+          <div class="v-details-box">
+            <p>La nascita dei miei bellissimi cuccioli che ha riempito di gioia tutta la mia famiglia!</p>
+          </div>
+        </div>
+
+        <!-- Victory Box 3: ERCOLANO -->
+        <div class="victory-card">
+          <div class="v-card-top">
+            <span class="v-trophy-icon">🥇</span>
+            <span class="v-date-tag">05 MAGGIO 2019</span>
+          </div>
+          <h3 class="v-title">Esposizione Internazionale Ercolano</h3>
+          <div class="v-location"><i class="fa-solid fa-location-dot"></i> Ercolano (NA)</div>
+          <div class="v-result-badge gold">
+            1° Eccellente • CAC • CACIB
+          </div>
+          <div class="v-details-box">
+            <p>Il mio primo grande trionfo ufficiale nel ring internazionale!</p>
+          </div>
+        </div>
+
+        <!-- Victory Box 4: TELESE TERME -->
+        <div class="victory-card">
+          <div class="v-card-top">
+            <span class="v-trophy-icon">🥈</span>
+            <span class="v-date-tag">26 MAGGIO 2019</span>
+          </div>
+          <h3 class="v-title">Esposizione Internazionale Telese Terme</h3>
+          <div class="v-location"><i class="fa-solid fa-location-dot"></i> Telese Terme (BN)</div>
+          <div class="v-result-badge gold">
+            1° Eccellente • Riserva CAC
+          </div>
+          <div class="v-details-box">
+            <p><strong>La mia sfilata sotto la pioggia!</strong> Ero completamente inzuppato e Alessandro ha dovuto strizzarmi il pelo prima del ring!</p>
+          </div>
+        </div>
+
+        <!-- Victory Box 5: ISERNIA 2019 -->
+        <div class="victory-card">
+          <div class="v-card-top">
+            <span class="v-trophy-icon">🥇</span>
+            <span class="v-date-tag">08 SETTEMBRE 2019</span>
+          </div>
+          <h3 class="v-title">Esposizione Nazionale Isernia</h3>
+          <div class="v-location"><i class="fa-solid fa-location-dot"></i> Isernia (IS)</div>
+          <div class="v-result-badge gold">
+            1° Classificato • CAC
+          </div>
+          <div class="v-details-box">
+            <p><strong>Giudice: Alessandrina Alfredo.</strong> Vittoria conquistata in una bellissima giornata vicino al lago.</p>
+          </div>
+        </div>
+
+        <!-- Victory Box 6: ISERNIA 2020 -->
+        <div class="victory-card">
+          <div class="v-card-top">
+            <span class="v-trophy-icon">🥇</span>
+            <span class="v-date-tag">06 SETTEMBRE 2020</span>
+          </div>
+          <h3 class="v-title">Esposizione Nazionale Isernia</h3>
+          <div class="v-location"><i class="fa-solid fa-location-dot"></i> Isernia (IS)</div>
+          <div class="v-result-badge gold">
+            1° Classificato • CAC
+          </div>
+          <div class="v-details-box">
+            <p><strong>Giudice: Marino Pietro.</strong> Il mio grande primo posto al rientro nelle gare post-lockdown!</p>
+          </div>
+        </div>
+
+        <!-- Victory Box 7: CAMPOBASSO 2021 -->
+        <div class="victory-card">
+          <div class="v-card-top">
+            <span class="v-trophy-icon">🥇</span>
+            <span class="v-date-tag">27 GIUGNO 2021</span>
+          </div>
+          <h3 class="v-title">Esposizione Internazionale Campobasso</h3>
+          <div class="v-location"><i class="fa-solid fa-location-dot"></i> Campobasso (CB)</div>
+          <div class="v-result-badge gold">
+            1° Classificato • Riserva CAC / CACIB
+          </div>
+          <div class="v-details-box">
+            <p>Un passo fondamentale che mi ha avvicinato sempre di più al titolo di Campione!</p>
+          </div>
+        </div>
+
+        <!-- Victory Box 8: CASALUCE 2021 -->
+        <div class="victory-card">
+          <div class="v-card-top">
+            <span class="v-trophy-icon">🥇</span>
+            <span class="v-date-tag">10 LUGLIO 2021</span>
+          </div>
+          <h3 class="v-title">Raduno Nazionale Casaluce</h3>
+          <div class="v-location"><i class="fa-solid fa-location-dot"></i> Casaluce (CE)</div>
+          <div class="v-result-badge gold">
+            1° Classificato • CAC
+          </div>
+          <div class="v-details-box">
+            <p><strong>Giudice: Mighetta Maria Grazia Carmen.</strong> Ho conquistato tutti con la mia camminata elegante!</p>
+          </div>
+        </div>
+
+        <!-- Victory Box 9: ROMA 2021 -->
+        <div class="victory-card">
+          <div class="v-card-top">
+            <span class="v-trophy-icon">🥇</span>
+            <span class="v-date-tag">25 SETTEMBRE 2021</span>
+          </div>
+          <h3 class="v-title">Raduno Nazionale Roma</h3>
+          <div class="v-location"><i class="fa-solid fa-location-dot"></i> Roma (RM)</div>
+          <div class="v-result-badge gold">
+            1° Classificato • CAC
+          </div>
+          <div class="v-details-box">
+            <p>La mia bellissima rivincita e vittoria nel ring della Capitale!</p>
+          </div>
+        </div>
+
+        <!-- Victory Box 10: MONTESILVANO 2021 -->
+        <div class="victory-card">
+          <div class="v-card-top">
+            <span class="v-trophy-icon">🏆</span>
+            <span class="v-date-tag">16 OTTOBRE 2021</span>
+          </div>
+          <h3 class="v-title">Esposizione Internazionale Montesilvano</h3>
+          <div class="v-location"><i class="fa-solid fa-location-dot"></i> Montesilvano (PE)</div>
+          <div class="v-result-badge gold">
+            1° Classificato • CAC • CACIB
+          </div>
+          <div class="v-details-box">
+            <p>Una delle mie esibizioni più spettacolari ed eleganti da espositore!</p>
+          </div>
+        </div>
+
+        <!-- Victory Box 11: CASALUCE 2022 -->
+        <div class="victory-card">
+          <div class="v-card-top">
+            <span class="v-trophy-icon">🥇</span>
+            <span class="v-date-tag">16 APRILE 2022</span>
+          </div>
+          <h3 class="v-title">Raduno Nazionale Casaluce</h3>
+          <div class="v-location"><i class="fa-solid fa-location-dot"></i> Casaluce (CE)</div>
+          <div class="v-result-badge gold">
+            Medaglia d'Oro &amp; Coccarda
+          </div>
+          <div class="v-details-box">
+            <p><strong>Giudice: Cuccillato Alberto.</strong> La mia ultima grande vittoria prima del titolo di Campione!</p>
+          </div>
+        </div>
+
+        <!-- Victory Box 12: CASERTA 2022 -->
+        <div class="victory-card">
+          <div class="v-card-top">
+            <span class="v-trophy-icon">🥇</span>
+            <span class="v-date-tag">20 NOVEMBRE 2022</span>
+          </div>
+          <h3 class="v-title">Esposizione Internazionale Caserta</h3>
+          <div class="v-location"><i class="fa-solid fa-location-dot"></i> Caserta (CE)</div>
+          <div class="v-result-badge gold">
+            Medaglia d'Oro &amp; Coccarda
+          </div>
+          <div class="v-details-box">
+            <p>La mia prima Medaglia d'Oro conquistata indossando il titolo di Campione Italiano in carica!</p>
+          </div>
+        </div>
+
+        <!-- Victory Box 13: CASALUCE 2023 -->
+        <div class="victory-card">
+          <div class="v-card-top">
+            <span class="v-trophy-icon">🏅</span>
+            <span class="v-date-tag">15 APRILE 2023</span>
+          </div>
+          <h3 class="v-title">Raduno Nazionale Casaluce</h3>
+          <div class="v-location"><i class="fa-solid fa-location-dot"></i> Casaluce (CE)</div>
+          <div class="v-result-badge gold">
+            Premio &amp; Coccarda Ufficiale
+          </div>
+          <div class="v-details-box">
+            <p>Ho sfilato per dimostrare a tutti che il Re della passerella sono sempre io!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE FOTOGRAFICA STILE INSTAGRAM GRID CON LE FOTO REALI DI SERGIO -->
+  <section class="section photo-grid-section" id="galleria">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-subtitle"><i class="fa-solid fa-camera-retro"></i> IL MIO INSTAGRAM</div>
+        <h2 class="section-title">La Mia Vita in Scatti 📸</h2>
+        <p class="section-description">
+          Dai ring d'Italia al mio divano a Bagnoli: ecco i miei momenti autentici e la mia vita vera.
+        </p>
+      </div>
+
+      <!-- Instagram Masonry Photo Grid -->
+      <div class="ig-masonry-grid" id="galleryGrid">
+
+        <!-- Real Photo Item 1: Forest Log Trunk -->
+        <div class="ig-post-card" data-category="nature">
+          <div class="ig-post-header">
+            <div class="ig-user">
+              <span class="ig-avatar">🌲</span>
+              <div>
+                <strong>@sergioilbassotto</strong>
+                <small>Nel mio bosco preferito</small>
+              </div>
+            </div>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+          <div class="ig-post-img">
+            <img src="images/sergio_forest_trunk.jpg" alt="Sergio sul Tronco nel Bosco Foto Reale">
+          </div>
+          <div class="ig-post-actions">
+            <div>
+              <i class="fa-solid fa-heart liked"></i>
+              <i class="fa-solid fa-comment"></i>
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+            <i class="fa-solid fa-bookmark"></i>
+          </div>
+          <div class="ig-post-likes">Piace a <strong>alessandro_baggio</strong> e <strong>altri 9.420 pet lovers</strong></div>
+          <div class="ig-post-caption">
+            <strong>sergioilbassotto</strong> Un Re sul suo tronco nel bosco! Sguardo fiero, baffi perfetti e portamento da vero Campione. 🌲🐾👑 #SergioIlBassotto #CampioneNelBosco #RealSergio
+          </div>
+        </div>
+
+        <!-- Real Photo Item 2: Armchair Studio Portrait -->
+        <div class="ig-post-card" data-category="champion">
+          <div class="ig-post-header">
+            <div class="ig-user">
+              <span class="ig-avatar">👑</span>
+              <div>
+                <strong>@sergioilbassotto</strong>
+                <small>Ritratto Ufficiale in Poltrona</small>
+              </div>
+            </div>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+          <div class="ig-post-img">
+            <img src="images/sergio_armchair_portrait.jpg" alt="Sergio in Poltrona Ritratto Ufficiale">
+          </div>
+          <div class="ig-post-actions">
+            <div>
+              <i class="fa-solid fa-heart liked"></i>
+              <i class="fa-solid fa-comment"></i>
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+            <i class="fa-solid fa-bookmark"></i>
+          </div>
+          <div class="ig-post-likes">Piace a <strong>alessandro_baggio</strong> e <strong>altri 8.910 pet lovers</strong></div>
+          <div class="ig-post-caption">
+            <strong>sergioilbassotto</strong> Sulla mia poltrona preferita con il portamento da vero Campione Italiano. Posa regale approvata! 🛋️🏆👑 #CampioneItaliano #PosaRegale #SergioIlBassotto
+          </div>
+        </div>
+
+        <!-- Real Photo Item 3: Beach Close-up -->
+        <div class="ig-post-card" data-category="beach">
+          <div class="ig-post-header">
+            <div class="ig-user">
+              <span class="ig-avatar">🏖️</span>
+              <div>
+                <strong>@sergioilbassotto</strong>
+                <small>Spiaggia di Bagnoli (Napoli)</small>
+              </div>
+            </div>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+          <div class="ig-post-img">
+            <img src="images/sergio_beach_closeup.jpg" alt="Sergio in Spiaggia a Bagnoli">
+          </div>
+          <div class="ig-post-actions">
+            <div>
+              <i class="fa-solid fa-heart liked"></i>
+              <i class="fa-solid fa-comment"></i>
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+            <i class="fa-solid fa-bookmark"></i>
+          </div>
+          <div class="ig-post-likes">Piace a <strong>napoli_pet_lovers</strong> e <strong>altri 7.430 utenti</strong></div>
+          <div class="ig-post-caption">
+            <strong>sergioilbassotto</strong> Solleone e sabbia a Bagnoli: guarda il mio pelo dorato che risplende al sole! ☀️🌊🐾 #Bagnoli #Spiaggia #BassottoInVacanze
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE BRAND COLLABORATION & MEDIA KIT IRONICO (IN PRIMA PERSONA) -->
+  <section class="section brand-collab-section" id="brand">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-subtitle">PARTNERSHIP &amp; PET LOVERS COMMUNITY</div>
+        <h2 class="section-title">Collabora Con Me 🤝</h2>
+        <p class="section-description">
+          Insieme ai miei umani valorizziamo i brand in modo naturale, spontaneo e divertente. Niente marchette noiose, solo la mia vita vera!
+        </p>
+      </div>
+
+      <div class="brand-grid">
+        <div class="brand-info-card">
+          <h3><i class="fa-solid fa-bullhorn"></i> Perché Scegliere Me?</h3>
+          <ul class="brand-check-list">
+            <li><i class="fa-solid fa-check-circle"></i> <strong>La Mia Community:</strong> Proprietari di cani ed amanti degli animali super attivi che mi seguono ogni giorno.</li>
+            <li><i class="fa-solid fa-check-circle"></i> <strong>I Miei Contenuti:</strong> Integrazione naturale dei prodotti nei miei Reel e Stories comiche.</li>
+            <li><i class="fa-solid fa-check-circle"></i> <strong>Qualità &amp; Simpatia:</strong> L'eleganza di un Campione Italiano unita alla mia simpatia unica!</li>
+          </ul>
+
+          <div class="brand-rate-box">
+            <h4><i class="fa-solid fa-bone"></i> Il Mio Tariffario Ufficiale (Approvato da Me)</h4>
+            <div class="rate-item">
+              <span>1 Reel Dedicato</span>
+              <strong>1 Pacco di Biscotti al Formaggio + 1 Grattino</strong>
+            </div>
+            <div class="rate-item">
+              <span>1 Set di Stories IG</span>
+              <strong>2 Fette di Prosciutto Crudo (Poco salato)</strong>
+            </div>
+            <div class="rate-item">
+              <span>Brand Ambassador Annuale</span>
+              <strong>Pensione a Vita a Bagnoli con Cuscino Ortopedico</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact / Media Kit Form -->
+        <form class="brand-form-card" id="brandForm">
+          <h3><i class="fa-solid fa-envelope-open-text"></i> Proponi una Collaborazione</h3>
+          <div class="form-group">
+            <label for="bName">Nome del Brand / Azienda</label>
+            <input type="text" id="bName" placeholder="Es. Snack Per Cani Srl" required>
+          </div>
+          <div class="form-group">
+            <label for="bEmail">Email di Contatto</label>
+            <input type="email" id="bEmail" placeholder="info@brand.it" required>
+          </div>
+          <div class="form-group">
+            <label for="bType">Tipo di Prodotto / Servizio</label>
+            <select id="bType">
+              <option value="cibo">🥩 Cibo &amp; Snack Gustosi (Consigliato da me)</option>
+              <option value="accessori">Pettorine, Guinzagli &amp; Cucce</option>
+              <option value="cura">Igiene, Spazzole &amp; Cura del Pelo</option>
+              <option value="altro">Altro Prodotto per Pet Lovers</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bMsg">Messaggio per me e i miei Umani</label>
+            <textarea id="bMsg" rows="3" placeholder="Descrivi brevemente l'idea di collaborazione..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold btn-block">
+            <i class="fa-solid fa-paper-plane"></i> Invia Proposta a Sergio
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAN CLUB (IN PRIMA PERSONA) -->
+  <section class="section fanclub-section" id="fanclub">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-subtitle">PET LOVERS COMMUNITY</div>
+        <h2 class="section-title">Inviami un Grattino o un Saluto ❤️</h2>
+        <p class="section-description">
+          Lasciami un saluto in bacheca! Ti risponderò con la mia solita simpatia da Re di Bagnoli.
+        </p>
+      </div>
+
+      <div class="fanclub-grid">
+        <form class="fan-form-card" id="fanForm">
+          <h3><i class="fa-solid fa-paper-plane"></i> Inviami un Saluto</h3>
+          
+          <div class="form-group">
+            <label for="fanName">Il tuo Nome / Nickname Instagram</label>
+            <input type="text" id="fanName" placeholder="Es. Alessandro @baggio" required>
+          </div>
+
+          <div class="form-group">
+            <label for="fanGift">Cosa mi invii?</label>
+            <select id="fanGift">
+              <option value="grattino">🖐️ Grattino sulla Pancia a Bagnoli</option>
+              <option value="biscotto">🍖 Fetta di Prosciutto Crudo</option>
+              <option value="ossequio">👑 Saluto al Campione Italiano</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="fanMessage">Messaggio per me</label>
+            <textarea id="fanMessage" rows="3" placeholder="Scrivimi qualcosa..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold btn-block">
+            <i class="fa-solid fa-paw"></i> Invia Saluto a Sergio
+          </button>
+        </form>
+
+        <div class="fan-wall-card">
+          <h3><i class="fa-solid fa-comments"></i> La Mia Bacheca Fan</h3>
+          <div class="comments-list" id="commentsList">
+            <!-- Dynamic comments -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="f-crown">👑</span>
+        <h3>SERGIO IL BASSOTTO</h3>
+        <p>CAMPIONE ITALIANO DI BELLEZZA • BAGNOLI (NAPOLI)</p>
+        <p><small>Proprietario: Baggio Alessandro | @sergioilbassotto</small></p>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/sergioilbassotto/" target="_blank" rel="noopener" class="footer-ig-btn">
+          <i class="fa-brands fa-instagram"></i> Segui @sergioilbassotto su Instagram
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>© 2026 Sergio il Bassotto — Campione Italiano di Bellezza, Re della Pensione a Bagnoli. 🐾</p>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="app.js"></script>
+</body>
+</html>

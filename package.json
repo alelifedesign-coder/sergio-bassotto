@@ -1,0 +1,17 @@
+{
+  "name": "sergio-bassotto-website",
+  "version": "1.0.0",
+  "description": "Sito Web Ufficiale di Sergio il Bassotto — Campione Italiano di Bellezza ENCI",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "sergio-bassotto",
+    "campione-italiano",
+    "bagnoli",
+    "enci"
+  ],
+  "author": "Alessandro Baggio",
+  "license": "MIT"
+}
