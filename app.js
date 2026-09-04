@@ -163,16 +163,47 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ------------------------------------------------------------------------
-   * 5. BRAND COLLABORATION FORM
+   * 5. BRAND COLLABORATION FORM (INVIO A SERGIOILBASSOTTO@GMAIL.COM)
    * ------------------------------------------------------------------------ */
   const brandForm = document.getElementById('brandForm');
   if (brandForm) {
     brandForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const bNameInput = document.getElementById('bName');
-      const bName = bNameInput ? bNameInput.value : 'Brand Partner';
-      showToast(`Grazie ${bName}! Proposta inviata ad Alessandro ed al controllore Sergio! 🐾`);
-      brandForm.reset();
+      const bEmailInput = document.getElementById('bEmail');
+      const bTypeSelect = document.getElementById('bType');
+      const bMsgInput = document.getElementById('bMsg');
+
+      const bName = bNameInput ? bNameInput.value.trim() : 'Brand Partner';
+      const bEmail = bEmailInput ? bEmailInput.value.trim() : '';
+      const bType = bTypeSelect ? bTypeSelect.options[bTypeSelect.selectedIndex].text : '';
+      const bMsg = bMsgInput ? bMsgInput.value.trim() : '';
+
+      showToast(`Invio proposta a sergioilbassotto@gmail.com in corso... ⏳`);
+
+      fetch('https://formsubmit.co/ajax/sergioilbassotto@gmail.com', {
+        method: 'POST',
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: `Nuova Proposta Collaborazione da ${bName}`,
+          Nome_Azienda: bName,
+          Email_Contatto: bEmail,
+          Tipo_Prodotto: bType,
+          Messaggio: bMsg
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        showToast(`Grazie ${bName}! Proposta inviata con successo a sergioilbassotto@gmail.com! 🐾✉️`);
+        brandForm.reset();
+      })
+      .catch(error => {
+        window.location.href = `mailto:sergioilbassotto@gmail.com?subject=Proposta Collaborazione da ${encodeURIComponent(bName)}&body=${encodeURIComponent(bMsg)}`;
+        showToast(`Aperto client email per sergioilbassotto@gmail.com! 🐾`);
+      });
     });
   }
 

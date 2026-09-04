@@ -578,19 +578,21 @@
         </div>
 
         <!-- Contact / Media Kit Form -->
-        <form class="brand-form-card" id="brandForm">
+        <form class="brand-form-card" id="brandForm" action="https://formsubmit.co/sergioilbassotto@gmail.com" method="POST">
           <h3><i class="fa-solid fa-envelope-open-text"></i> Proponi una Collaborazione</h3>
+          <input type="hidden" name="_subject" value="Nuova Proposta Collaborazione per Sergio!">
+          <input type="hidden" name="_captcha" value="false">
           <div class="form-group">
             <label for="bName">Nome del Brand / Azienda</label>
-            <input type="text" id="bName" placeholder="Es. Snack Per Cani Srl" required>
+            <input type="text" id="bName" name="Nome_Azienda" placeholder="Es. Snack Per Cani Srl" required>
           </div>
           <div class="form-group">
             <label for="bEmail">Email di Contatto</label>
-            <input type="email" id="bEmail" placeholder="info@brand.it" required>
+            <input type="email" id="bEmail" name="Email_Contatto" placeholder="info@brand.it" required>
           </div>
           <div class="form-group">
             <label for="bType">Tipo di Prodotto / Servizio</label>
-            <select id="bType">
+            <select id="bType" name="Tipo_Prodotto">
               <option value="cibo">🥩 Cibo &amp; Snack Gustosi (Consigliato da me)</option>
               <option value="accessori">Pettorine, Guinzagli &amp; Cucce</option>
               <option value="cura">Igiene, Spazzole &amp; Cura del Pelo</option>
@@ -599,10 +601,10 @@
           </div>
           <div class="form-group">
             <label for="bMsg">Messaggio per me e i miei Umani</label>
-            <textarea id="bMsg" rows="3" placeholder="Descrivi brevemente l'idea di collaborazione..." required></textarea>
+            <textarea id="bMsg" name="Messaggio" rows="3" placeholder="Descrivi brevemente l'idea di collaborazione..." required></textarea>
           </div>
           <button type="submit" class="btn btn-gold btn-block">
-            <i class="fa-solid fa-paper-plane"></i> Invia Proposta a Sergio
+            <i class="fa-solid fa-paper-plane"></i> Invia Proposta a sergioilbassotto@gmail.com
           </button>
         </form>
       </div>
