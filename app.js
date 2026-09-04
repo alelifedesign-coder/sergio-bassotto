@@ -167,43 +167,8 @@ document.addEventListener('DOMContentLoaded', () => {
    * ------------------------------------------------------------------------ */
   const brandForm = document.getElementById('brandForm');
   if (brandForm) {
-    brandForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const bNameInput = document.getElementById('bName');
-      const bEmailInput = document.getElementById('bEmail');
-      const bTypeSelect = document.getElementById('bType');
-      const bMsgInput = document.getElementById('bMsg');
-
-      const bName = bNameInput ? bNameInput.value.trim() : 'Brand Partner';
-      const bEmail = bEmailInput ? bEmailInput.value.trim() : '';
-      const bType = bTypeSelect ? bTypeSelect.options[bTypeSelect.selectedIndex].text : '';
-      const bMsg = bMsgInput ? bMsgInput.value.trim() : '';
-
-      showToast(`Invio proposta a sergioilbassotto@gmail.com in corso... ⏳`);
-
-      fetch('https://formsubmit.co/ajax/sergioilbassotto@gmail.com', {
-        method: 'POST',
-        headers: { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          _subject: `Nuova Proposta Collaborazione da ${bName}`,
-          Nome_Azienda: bName,
-          Email_Contatto: bEmail,
-          Tipo_Prodotto: bType,
-          Messaggio: bMsg
-        })
-      })
-      .then(response => response.json())
-      .then(data => {
-        showToast(`Grazie ${bName}! Proposta inviata con successo a sergioilbassotto@gmail.com! 🐾✉️`);
-        brandForm.reset();
-      })
-      .catch(error => {
-        window.location.href = `mailto:sergioilbassotto@gmail.com?subject=Proposta Collaborazione da ${encodeURIComponent(bName)}&body=${encodeURIComponent(bMsg)}`;
-        showToast(`Aperto client email per sergioilbassotto@gmail.com! 🐾`);
-      });
+    brandForm.addEventListener('submit', () => {
+      showToast(`Invio della proposta in corso a sergioilbassotto@gmail.com... 🐾`);
     });
   }
 
