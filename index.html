@@ -643,9 +643,12 @@
             <label for="bMsg">Messaggio per me e i miei Umani</label>
             <textarea id="bMsg" name="Messaggio" rows="3" placeholder="Descrivi brevemente l'idea di collaborazione..." required></textarea>
           </div>
-          <button type="submit" class="btn btn-gold btn-block">
-            <i class="fa-solid fa-paper-plane"></i> Invia Proposta via FormSubmit
+          <button type="submit" id="brandSubmitBtn" class="btn btn-gold btn-block">
+            <i class="fa-solid fa-paper-plane"></i> Invia Proposta di Collaborazione
           </button>
+
+          <!-- MESSAGGIO DI STATO CONFERMA INVIO SENZA REINDIRIZZAMENTO -->
+          <div id="brandFormStatus" style="display: none; margin-top: 15px; padding: 12px; border-radius: 10px; font-weight: 700; text-align: center; font-size: 0.95rem;"></div>
           
           <div style="text-align: center; margin-top: 15px; background: rgba(255,255,255,0.05); padding: 12px; border-radius: 8px;">
             <small style="opacity: 0.9; color: #cbd5e1;">Preferisci inviare una mail dal tuo programma di posta?</small><br>
