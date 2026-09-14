@@ -307,11 +307,18 @@ img {
 
 .mobile-toggle {
   display: none;
-  background: none;
-  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 10px;
   color: #ffffff;
   font-size: 1.4rem;
   cursor: pointer;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 1200;
 }
 
 /* MAIN CONTENT - CENTRATO VERTICALMENTE A SINISTRA */
@@ -1084,20 +1091,36 @@ img {
   .navbar-container {
     position: relative;
     padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow: visible;
+  }
+
+  .brand-169 {
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+    flex-shrink: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
   }
 
   .nav-links-169 {
     display: none;
     position: absolute;
     top: 100%;
-    right: 1rem;
-    width: calc(100% - 2rem);
-    max-width: 320px;
-    background: rgba(21, 34, 56, 0.98);
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(11, 19, 41, 0.98);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: var(--radius-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     padding: 1.25rem 1.5rem;
     flex-direction: column;
     align-items: flex-start;
@@ -1105,7 +1128,7 @@ img {
     z-index: 1100;
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.85);
   }
-  
+
   .nav-links-169.active {
     display: flex;
   }
@@ -1113,8 +1136,9 @@ img {
   .nav-169-right {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
-    margin-left: auto;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    margin-left: 0.75rem;
   }
 
   .nav-instagram-btn {
@@ -1122,19 +1146,20 @@ img {
   }
 
   .mobile-toggle {
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     width: 44px;
     height: 44px;
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.35);
-    border-radius: var(--radius-sm);
+    border-radius: 10px;
     color: #ffffff;
     font-size: 1.35rem;
     cursor: pointer;
-    transition: all var(--transition-fast);
+    flex-shrink: 0;
     z-index: 1200;
+    transition: all var(--transition-fast);
   }
 
   .mobile-toggle:hover, .mobile-toggle:active {
