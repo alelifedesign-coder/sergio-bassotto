@@ -1117,6 +1117,10 @@ img {
     margin-left: auto;
   }
 
+  .nav-instagram-btn {
+    display: none;
+  }
+
   .mobile-toggle {
     display: flex;
     align-items: center;
@@ -1130,6 +1134,7 @@ img {
     font-size: 1.35rem;
     cursor: pointer;
     transition: all var(--transition-fast);
+    z-index: 1200;
   }
 
   .mobile-toggle:hover, .mobile-toggle:active {
