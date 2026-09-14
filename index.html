@@ -19,44 +19,53 @@
 </head>
 <body class="theme-dark">
 
+  <!-- TOP NAVBAR STICKY & IN EVIDENZA -->
+  <header class="navbar-169 main-sticky-header">
+    <div class="container navbar-container">
+      <a href="#hero" class="brand-169">
+        <span>👑</span> SERGIO IL BASSOTTO
+      </a>
+
+      <nav class="nav-links-169" id="navLinks">
+        <a href="#bio">Chi Sono</a>
+        <a href="#storia-completa">La Mia Storia</a>
+        <a href="#palmares">Il Mio Campionato</a>
+        <a href="#galleria">Le Mie Foto</a>
+        <a href="#brand">Collabora</a>
+        <a href="#fanclub">Scrivimi</a>
+      </nav>
+
+      <div class="nav-169-right">
+        <button id="themeToggleBtn" class="icon-btn" title="Cambia Modalità">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="https://www.instagram.com/sergioilbassotto/" target="_blank" rel="noopener" class="btn-pill-light">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
   <!-- HERO TOP 16:9 FULLSCREEN BANNER -->
   <section class="hero-full-169" id="hero">
-    <!-- BACKGROUND IMAGE 16:9 CON OVERLAY SFUMATO SINISTRA -->
-    <div class="hero-169-bg">
+    <!-- BACKGROUND IMAGE 16:9 (DESKTOP) -->
+    <div class="hero-169-bg desktop-hero-bg">
       <img src="images/sergio_top.jpg" alt="Sergio il Bassotto Cover 16:9" id="heroImg">
       <div class="hero-169-overlay"></div>
     </div>
+    
+    <!-- MOBILE APP-LIKE IMAGE (MOBILE CON SFUMATURA IN BASSO) -->
+    <div class="mobile-hero-img-container">
+      <div class="mobile-hero-img-wrapper">
+        <img src="images/WhatsApp Image 2026-09-04 at 12.25.00.jpeg" alt="Sergio il Bassotto" class="mobile-hero-img">
+        <div class="mobile-hero-fade"></div>
+      </div>
+    </div>
 
     <div class="container hero-169-container">
-      
-      <!-- TOP NAVBAR TRASPARENTE SENZA SOVRAPPOSIZIONI -->
-      <header class="navbar-169">
-        <a href="#hero" class="brand-169">
-          <span>👑</span> SERGIO IL BASSOTTO
-        </a>
-
-        <nav class="nav-links-169" id="navLinks">
-          <a href="#bio">Chi Sono</a>
-          <a href="#storia-completa">La Mia Storia</a>
-          <a href="#palmares">Il Mio Campionato</a>
-          <a href="#galleria">Le Mie Foto</a>
-          <a href="#brand">Collabora</a>
-          <a href="#fanclub">Scrivimi</a>
-        </nav>
-
-        <div class="nav-169-right">
-          <button id="themeToggleBtn" class="icon-btn" title="Cambia Modalità">
-            <i class="fa-solid fa-sun"></i>
-          </button>
-          <a href="https://www.instagram.com/sergioilbassotto/" target="_blank" rel="noopener" class="btn-pill-light">
-            <i class="fa-brands fa-instagram"></i> Instagram
-          </a>
-          <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-        </div>
-      </header>
-
       <!-- MAIN LEFT-ALIGNED HERO CONTENT (PERFETTAMENTE CENTRATO VERTICALMENTE) -->
       <div class="hero-169-main-content">
         
@@ -94,9 +103,11 @@
             <i class="fa-solid fa-envelope"></i> <a href="mailto:sergioilbassotto@gmail.com">sergioilbassotto@gmail.com</a>
           </div>
 
-          <div class="hero-email-pill" style="border-color: #10b981;">
-            <i class="fa-solid fa-phone" style="color: #10b981;"></i> Papi Alessandro: <a href="tel:3381338735" style="color: #ffffff; font-weight: 700;">338 133 8735</a>
-            <a href="https://wa.me/393381338735" target="_blank" rel="noopener" style="margin-left: 6px; color: #25D366;" title="Chatta su WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <div class="hero-email-pill" style="border-color: #25D366; background: rgba(37, 211, 102, 0.15);">
+            <i class="fa-brands fa-whatsapp" style="color: #25D366; font-size: 1.1rem;"></i> 
+            <a href="https://wa.me/393381338735" target="_blank" rel="noopener" style="color: #ffffff; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+              Papi Alessandro: 338 133 8735 <span style="background: #25D366; color: #0b1329; font-size: 0.72rem; padding: 2px 7px; border-radius: 10px; font-weight: 800; text-transform: uppercase;">WhatsApp</span>
+            </a>
           </div>
 
           <div class="hero-status-card">
@@ -594,12 +605,13 @@
             </div>
 
             <div style="font-size: 1.05rem; display: flex; align-items: center; flex-wrap: wrap; gap: 8px;">
-              <i class="fa-solid fa-phone" style="color: #10b981; width: 22px;"></i>
+              <i class="fa-brands fa-whatsapp" style="color: #25D366; font-size: 1.25rem; width: 22px;"></i>
               <strong>Cellulare Papi (Alessandro):</strong> 
-              <a href="tel:3381338735" style="color: #ffffff; font-weight: 700; text-decoration: none;">338 133 8735</a>
-              
-              <a href="https://wa.me/393381338735" target="_blank" rel="noopener" style="background: #25D366; color: #ffffff; padding: 4px 12px; border-radius: 16px; font-size: 0.85rem; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 5px;">
-                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+              <a href="https://wa.me/393381338735" target="_blank" rel="noopener" style="color: #ffffff; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+                338 133 8735
+                <span style="background: #25D366; color: #0b1329; padding: 3px 10px; border-radius: 14px; font-size: 0.8rem; font-weight: 800; display: inline-flex; align-items: center; gap: 4px;">
+                  <i class="fa-brands fa-whatsapp"></i> Apri WhatsApp
+                </span>
               </a>
             </div>
           </div>
@@ -705,8 +717,7 @@
         <p><small>Proprietario: Baggio Alessandro | @sergioilbassotto</small></p>
         <p style="margin-top: 10px; font-size: 0.95rem;">
           <i class="fa-solid fa-envelope" style="color: #f59e0b;"></i> <a href="mailto:sergioilbassotto@gmail.com" style="color: #38bdf8; text-decoration: none;">sergioilbassotto@gmail.com</a> • 
-          <i class="fa-solid fa-phone" style="color: #10b981; margin-left: 8px;"></i> <a href="tel:3381338735" style="color: #ffffff; text-decoration: none; font-weight: 600;">338 133 8735</a>
-          <a href="https://wa.me/393381338735" target="_blank" rel="noopener" style="margin-left: 6px; color: #25D366;" title="Chatta su WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <i class="fa-brands fa-whatsapp" style="color: #25D366; margin-left: 8px;"></i> <a href="https://wa.me/393381338735" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: none; font-weight: 700;">338 133 8735 (WhatsApp)</a>
         </p>
       </div>
 
@@ -720,6 +731,11 @@
       <p>© 2026 Sergio il Bassotto — Campione Italiano di Bellezza, Re della Pensione a Bagnoli. 🐾</p>
     </div>
   </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Torna in alto" title="Torna all'inizio">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
   <!-- Custom JS -->
   <script src="app.js"></script>
