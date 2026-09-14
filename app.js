@@ -178,12 +178,64 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ------------------------------------------------------------------------
-   * 5. BRAND COLLABORATION FORM (INVIO A SERGIOILBASSOTTO@GMAIL.COM)
+   * 5. BRAND COLLABORATION FORM (INVIO ASINCRONO SENZA REINDIRIZZAMENTO)
    * ------------------------------------------------------------------------ */
   const brandForm = document.getElementById('brandForm');
+  const brandSubmitBtn = document.getElementById('brandSubmitBtn');
+  const brandFormStatus = document.getElementById('brandFormStatus');
+
   if (brandForm) {
-    brandForm.addEventListener('submit', () => {
-      showToast(`Invio della proposta in corso a sergioilbassotto@gmail.com... 🐾`);
+    brandForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      if (brandSubmitBtn) {
+        brandSubmitBtn.disabled = true;
+        brandSubmitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Invio in corso...';
+      }
+
+      if (brandFormStatus) {
+        brandFormStatus.style.display = 'none';
+      }
+
+      const formData = new FormData(brandForm);
+
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/sergioilbassotto@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json'
+          },
+          body: formData
+        });
+
+        if (response.ok) {
+          brandForm.reset();
+          if (brandFormStatus) {
+            brandFormStatus.style.display = 'block';
+            brandFormStatus.style.background = 'rgba(16, 185, 129, 0.15)';
+            brandFormStatus.style.border = '1px solid #10b981';
+            brandFormStatus.style.color = '#34d399';
+            brandFormStatus.innerHTML = '✔ L\'email è stata inviata con successo! Ti risponderemo al più presto. 🐾❤️';
+          }
+          showToast("L'email è stata inviata con successo! 🐾");
+        } else {
+          throw new Error('Errore durante l\'invio');
+        }
+      } catch (err) {
+        if (brandFormStatus) {
+          brandFormStatus.style.display = 'block';
+          brandFormStatus.style.background = 'rgba(239, 68, 68, 0.15)';
+          brandFormStatus.style.border = '1px solid #ef4444';
+          brandFormStatus.style.color = '#f87171';
+          brandFormStatus.innerHTML = '❌ Si è verificato un errore durante l\'invio. Puoi scrivere direttamente a sergioilbassotto@gmail.com';
+        }
+        showToast("Errore durante l'invio dell'email.");
+      } finally {
+        if (brandSubmitBtn) {
+          brandSubmitBtn.disabled = false;
+          brandSubmitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Invia Proposta di Collaborazione';
+        }
+      }
     });
   }
 
